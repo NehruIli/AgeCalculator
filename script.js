@@ -1,5 +1,6 @@
 let currDate= document.getElementById("currDate");
 let dateOfBirth = document.querySelector("#DOB");
+let nameInput = document.getElementById("name");
 const CalcAge= document.getElementById("CalcAge");
 const displayAge= document.getElementById("displayAge");
 const Age= document.getElementById("age");
@@ -14,6 +15,6 @@ CalcAge.addEventListener("click",()=>{
         age = age - 1;
     }
 displayAge.style.visibility="visible";
-Age.innerText=`You are ${age} years old.`
+Age.innerText=`Hi.. ${nameInput.value}\nYou are ${age} years old.`
 });
 
